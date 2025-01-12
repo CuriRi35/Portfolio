@@ -159,7 +159,7 @@ small {
 }
 
 hr {
-  width: 100%;
+  width: 100vw;
 }
 
 /* フェードインアニメーション用 */
@@ -359,14 +359,7 @@ hr {
   }
 
   .container {
-    width: 100%;
-    height: 100vh;
     margin-top: 260%;
-  }
-  
-  .containerProfile {
-    width: 100%;
-    height: 100vh;
   }
 
   .addressMT {  
