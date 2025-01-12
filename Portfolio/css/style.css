@@ -293,10 +293,6 @@ small {
   .container {
     margin-top: 250%;
   }
-
-  address {
-    gap: 10%;
-  }
   
 }
 
@@ -360,6 +356,10 @@ small {
 
   .container {
     margin-top: 260%;
+  }
+
+  .addressMT {  
+    font-size: 15px;
   }
 }
 
