@@ -259,11 +259,13 @@ hr {
   }
 
   img {
-    width: 440px;
+    /* width: 440px; */
+    width: 200px;
   }
   
   video {
-    width: 440px;
+    /* width: 440px; */
+    width: 200px;
   }
 }
 
@@ -272,12 +274,20 @@ hr {
     font-size: 25px;
   }
 
-  img {
+  /* img {
     width: 400px;
   }
   
   video {
     width: 400px;
+  } */
+
+  img {
+    width: 200px;
+  }
+  
+  video {
+    width: 200px;
   }
 }
 
@@ -290,12 +300,20 @@ hr {
     width: 650px;
   }
   
-  video {
+  /* video {
     width: 650px;
   }
 
   .container {
     margin-top: 250%;
+  } */
+
+  img {
+    width: 200px;
+  }
+  
+  video {
+    width: 200px;
   }
   
 }
@@ -318,12 +336,20 @@ hr {
 }
 
 @media screen and (max-width: 730px) {
-  img {
+  /* img {
     width: 600px;
   }
   
   video {
     width: 600px;
+  } */
+
+  img {
+    width: 200px;
+  }
+  
+  video {
+    width: 200px;
   }
 
   .container {
@@ -336,12 +362,20 @@ hr {
     font-size: 120px;
   }
 
-  img {
+  /* img {
     width: 550px;
   }
   
   video {
     width: 550px;
+  } */
+
+  img {
+    width: 200px;
+  }
+  
+  video {
+    width: 200px;
   }
 
   .container {
@@ -350,12 +384,20 @@ hr {
 }
 
 @media screen and (max-width: 640px) {
-  img {
+  /* img {
     width: 490px;
   }
   
   video {
     width: 490px;
+  } */
+
+  img {
+    width: 200px;
+  }
+  
+  video {
+    width: 200px;
   }
 
   .container {
@@ -374,12 +416,20 @@ hr {
 }
 
 @media screen and (max-width: 550px) {
-  img {
+  /* img {
     width: 430px;
   }
 
   video {
     width: 430px;
+  } */
+
+  img {
+    width: 200px;
+  }
+  
+  video {
+    width: 200px;
   }
 
   .container {
@@ -408,12 +458,20 @@ hr {
     font-size: 90px;
   }
 
-  img {
+  /* img {
     width: 400px;
   }
 
   video {
     width: 400px;
+  } */
+
+  img {
+    width: 200px;
+  }
+  
+  video {
+    width: 200px;
   }
 
   .container {
@@ -442,12 +500,20 @@ hr {
     font-size: 80px;
   }
 
-  img {
+  /* img {
     width: 360px;
   }
 
   video {
     width: 360px;
+  } */
+
+  img {
+    width: 200px;
+  }
+  
+  video {
+    width: 200px;
   }
 
   .profile {
@@ -472,11 +538,19 @@ hr {
     font-size: 70px;
   }
 
-  img {
+  /* img {
     width: 310px;
   }
 
   video {
     width: 310px;
+  } */
+
+  img {
+    width: 200px;
+  }
+  
+  video {
+    width: 200px;
   }
 }
