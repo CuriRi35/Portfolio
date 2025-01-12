@@ -359,6 +359,8 @@ hr {
   }
 
   .container {
+    width: 100vw;
+    height: 100vh;
     margin-top: 260%;
   }
 
