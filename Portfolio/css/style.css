@@ -5,16 +5,12 @@
   color-scheme: light-dark;
 } */  
 
-* {
-  overflow-x: hidden;
-}
-
 body {
   width: 100vw;
   height: 100vh;
   background-color: rgba(178, 237, 237, 0.2);
   /* color: light-dark(#000000,#ffffff); */
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 h1,h2,h3 {
