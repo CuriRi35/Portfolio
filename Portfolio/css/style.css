@@ -161,7 +161,7 @@ small {
 /* フェードインアニメーション用 */
 .fade-in {
   opacity: 0;
-  transform: translateY(50px); /* 少し下に配置 */
+  transform: translateY(55px); /* 少し下に配置 */
   transition: opacity 1s ease-out, transform 1.6s ease-out;
 }
 
@@ -471,25 +471,3 @@ small {
     width: 310px;
   }
 }
-
-/* @media screen and (max-width: 300px) {
-  header h1 {
-    font-size: 50px;
-  }
-
-  h2 {
-    font-size: 40px;
-  }
-
-  img {
-    width: 310px;
-  }
-
-  video {
-    width: 310px;
-  }
-
-  .container {
-    margin-top: 460%;
-  }
-} */
