@@ -293,6 +293,11 @@ small {
   .container {
     margin-top: 250%;
   }
+
+  address {
+    gap: 10%;
+  }
+  
 }
 
 @media screen and (max-width: 880px) {
