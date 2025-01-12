@@ -1,7 +1,7 @@
 @charset "UFT-8";
 
 body {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
 
@@ -15,9 +15,9 @@ h2 {
 
 @keyframes slideIn {
   0% {
-    transform: translateY(500px); /* 初期位置（下に50px） */
+    transform: translateY(500px);
   }
-  100% {
-    transform: translateY(0); /* アニメーション後の最終位置（通常の位置） */
+  100vw {
+    transform: translateY(0);
   }
 }

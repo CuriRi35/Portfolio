@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 html {
-  width: 100%;
+  width: 100vw;
   height: auto;
 }
 
@@ -84,7 +84,7 @@ aside ol {
 }
 
 article {
-  width: 100%;
+  width: 100vw;
   margin: 2% auto;
   display: flex;
   flex-wrap: wrap;
@@ -113,6 +113,15 @@ article .sideMenu {
 
 .sideKodomo p {
   font-size: 7px;
+}
+
+img {
+  transition: all 0.7s;
+  border-radius: 20px;
+}
+
+img:hover {
+  transform: scale(1.5);
 }
 
 .sideMenu img {

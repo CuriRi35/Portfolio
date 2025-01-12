@@ -1,9 +1,15 @@
 @charset "UTF-8";
 
+/* ライトモードダークモード用 仮 */
+/* :root {
+  color-scheme: light-dark;
+} */  
+
 body {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-color: rgba(178, 237, 237, 0.2);
+  /* color: light-dark(#000000,#ffffff); */
   overflow-x: hidden;
 }
 
@@ -16,21 +22,22 @@ h3 {
 }
 
 header h1 {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 140px;
+  font-size: 160px;
 }
 
 h2 {
   text-align: center;
-  font-size: 90px;
+  font-size: 130px;
+  margin: 0;
 }
 
 main {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   display: block;
   justify-content: center;
@@ -40,7 +47,7 @@ article {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 15%;
+  gap: 5%;
 }
 
 section {
@@ -53,22 +60,50 @@ aside {
 
 img {
   border-radius: 20px;
-  width: 300px;
+  width: 430px;
   height: auto;
+  transition: 0.6s;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+video {
+  border-radius: 20px;
+  width: 430px;
+  height: auto;
+  transition: 0.6s;
+}
+
+video:hover {
+  transform: scale(1.1);
 }
 
 .container {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 20%;
+}
+
+.containerProfile {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20%; 
 }
 
 h4 {
   text-align: center;
-  margin: 10px auto;
+  margin: 2% auto;
+  font-size: 25px;
 }
 
 .part {
@@ -76,7 +111,9 @@ h4 {
 }
 
 .language {
+  color: rgba(115, 115, 128);
   font-size: 30px;
+  text-align: left;
 }
 
 a {
@@ -98,18 +135,22 @@ footer section {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 20px;
+  font-size: 35px;
+}
+
+span {
+  font-size: 35px;
 }
 
 footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin: 3% auto;
 }
 
 footer nav {
-  padding-left: 50px;
+  font-size: 60px;
 }
 
 small {
@@ -121,11 +162,312 @@ small {
 .fade-in {
   opacity: 0;
   transform: translateY(50px); /* 少し下に配置 */
-  transition: opacity 1s ease-out, transform 1.5s ease-out;
+  transition: opacity 1s ease-out, transform 1.6s ease-out;
 }
 
 /* スクロールで表示されたとき */
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0); /* 元の位置に戻す */
+}
+
+@media screen and (max-width: 1500px) {
+  img {
+    width: 400px;
+  }
+  
+  video {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  img {
+    width: 370px;
+  }
+  
+  video {
+    width: 370px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  img {
+    width: 350px;
+  }
+  
+  video {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  img {
+    width: 330px;
+  }
+  
+  video {
+    width: 330px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  h4 {
+    font-size: 30px;
+  }
+
+  img {
+    width: 460px;
+  }
+  
+  video {
+    width: 460px;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 0;
+    margin-top: 30%;
+
+  }
+
+  .containerProfile {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .language {
+    text-align: center;
+  }
+
+  .addressMT {  
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  h4 {
+    font-size: 35px;
+  }
+  
+  .container {
+    margin-top: 40%;
+  }
+
+  img {
+    width: 440px;
+  }
+  
+  video {
+    width: 440px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  h4 {
+    font-size: 25px;
+  }
+
+  img {
+    width: 400px;
+  }
+  
+  video {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  article {
+    gap: 15%;
+  }
+
+  img {
+    width: 650px;
+  }
+  
+  video {
+    width: 650px;
+  }
+
+  .container {
+    margin-top: 250%;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .container {
+    margin-top: 270%;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  h2 {
+    font-size: 110px;
+    margin: 0 auto;
+  }
+  
+  footer nav {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  img {
+    width: 600px;
+  }
+  
+  video {
+    width: 600px;
+  }
+
+  .container {
+    margin-top: 270%;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  header h1 {
+    font-size: 120px;
+  }
+
+  img {
+    width: 550px;
+  }
+  
+  video {
+    width: 550px;
+  }
+
+  .container {
+    margin-top: 270%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  img {
+    width: 490px;
+  }
+  
+  video {
+    width: 490px;
+  }
+
+  .container {
+    margin-top: 260%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .container {
+    margin-top: 270%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  img {
+    width: 430px;
+  }
+
+  video {
+    width: 430px;
+  }
+
+  .container {
+    margin-top: 260%;
+  }
+
+  .profile {
+    font-size: 30px;
+  }
+
+  span {
+    font-size: 30px;
+  }
+  
+  footer nav {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header h1 {
+    font-size: 100px;
+  }
+
+  h2 {
+    font-size: 90px;
+  }
+
+  img {
+    width: 400px;
+  }
+
+  video {
+    width: 400px;
+  }
+
+  .container {
+    margin-top: 250%;
+  }
+
+  .profile {
+    font-size: 25px;
+  }
+
+  span {
+    font-size: 25px;
+  }
+  
+  footer nav {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header h1 {
+    font-size: 90px;
+  }
+
+  h2 {
+    font-size: 80px;
+  }
+
+  img {
+    width: 360px;
+  }
+
+  video {
+    width: 360px;
+  }
+
+  .profile {
+    font-size: 20px;
+  }
+
+  span {
+    font-size: 20px;
+  }
+  
+  footer nav {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header h1 {
+    font-size: 80px;
+  }
+
+  h2 {
+    font-size: 70px;
+  }
+
+  img {
+    width: 310px;
+  }
+
+  video {
+    width: 310px;
+  }
 }
