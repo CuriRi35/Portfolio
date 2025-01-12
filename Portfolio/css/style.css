@@ -471,3 +471,25 @@ small {
     width: 310px;
   }
 }
+
+@media screen and (max-width: 300px) {
+  header h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  img {
+    width: 310px;
+  }
+
+  video {
+    width: 310px;
+  }
+
+  .container {
+    margin-top: 460%;
+  }
+}
