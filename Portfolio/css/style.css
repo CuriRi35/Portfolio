@@ -162,6 +162,11 @@ small {
   justify-content: center;
 }
 
+hr {
+  width: 100vw;
+  height: 100vh;
+}
+
 /* フェードインアニメーション用 */
 .fade-in {
   opacity: 0;
