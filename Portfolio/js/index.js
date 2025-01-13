@@ -19,3 +19,11 @@ window.addEventListener('wheel', function(event) {
 }, { passive: false });
 
 checkVisibility();
+
+document.querySelector('a').addEventListener('click', function(event) {
+  event.preventDefault();
+
+  this.addEventListener('transitionend', function() {
+    window.location.href = this.href;
+  });
+});
