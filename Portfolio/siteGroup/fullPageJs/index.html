@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js"></script>    <script src="js/index.js" defer></script>
+    <title>fullPageJs</title>
+  </head>
+  <body>
+    <div id="fullpage">
+      <div class="section">
+        <header>
+          <h1>fullPageJs</h1>
+        </header>
+      </div>
+      <div class="section">
+        <article class="parfait"></article>
+      </div>
+      <div class="section">
+        <article class="bar"></article>
+      </div>
+      <div class="section">
+        <article class="montblanc"></article>
+      </div>
+      <div class="section">
+        <article class="christmas"></article>
+      </div>
+    </div>
+    <script>
+      jQuery(function () {
+          jQuery('#fullpage').fullpage({
+              scrollOverflow:true,
+          });
+      });
+    </script>
+  </body>
+</html>
